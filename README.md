@@ -1,5 +1,6 @@
 # JoinTitle
-Send title to your players when they join!
+[![Poggit-Ci](https://poggit.pmmp.io/ci.shield/NickTehUnicorn/JoinTitle/~)](https://poggit.pmmp.io/ci/NickTehUnicorn/JoinTitle/JoinTitle)
+## Send title to your players when they join!
 
 ### Usage:
 | Command  | Description |
