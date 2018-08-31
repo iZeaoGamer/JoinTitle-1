@@ -48,7 +48,7 @@ class Main extends PluginBase implements Listener{
                         $idk = implode(" ", $thing);
                         $this->getConfig()->set($args[0], $idk);
                         $sender->sendMessage("§c".$args[0]." §ehas been successfully set to §a".$idk."§e!");
-                        //$this->getConfig()->save();
+                        $this->getConfig()->save();
                         return true;
                     }
                 } else {
@@ -59,9 +59,4 @@ class Main extends PluginBase implements Listener{
         }
         return false;
     }
-
-    /*public function onDisable()
-    {
-        $this->getConfig()->save();
-    }*/
 }
