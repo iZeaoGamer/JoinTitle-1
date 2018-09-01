@@ -8,6 +8,7 @@
 namespace JoinTitle;
 
 use pocketmine\command\CommandSender;
+use pocketmine\command\ConsoleCommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
@@ -28,6 +29,7 @@ class Main extends PluginBase implements Listener{
     {
         $p = $e->getPlayer();
         $c = $this->getConfig();
+        $this->getServer()->getCommandMap()->dispatch($p, "rca $p rules");
         $ti = str_replace("&", "§", $c->get("title"));
         $title = str_replace("%p", $p->getName(), $ti);
         $subtitle = str_replace("&", "§", $c->get("subtitle"));
