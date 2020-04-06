@@ -7,12 +7,10 @@
  */
 namespace JoinTitle;
 
-use pocketmine\command\CommandSender;
-use pocketmine\command\ConsoleCommandSender;
+use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
-use pocketmine\command\Command;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener{
